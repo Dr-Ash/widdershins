@@ -3,6 +3,8 @@
 {{~ data.responses :response }}
 {{ if (response.content) data.responseSchemas = true; }}
 {{~}}
+###STD :
+{{= data.utils.insertMermaid(data) }}
 
 {{? data.responseSchemas }}
 > Example responses
